@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body data-offset="60" data-spy="scroll" data-target="#navbarSupportedContent">
     <!-- Navbar -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="align-middle" src="./assets/images/platzi-logo.png" alt="Platzi-Logo">
@@ -23,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">La conferecia</a>
+                        <a class="nav-link" href="#main">La conferecia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#speakers">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#place-time">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviertete en orador</a>
+                        <a class="nav-link" href="#become-speaker">Conviertete en orador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-platzi" href="#">Compra de tikets</a>
@@ -41,7 +41,8 @@
             </div>
         </div>
     </nav>
-
+    <!-- Navbar -->
+     
 
     <!-- Main -->
     <main id="main" class="main">
@@ -101,38 +102,54 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mb-4 ">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 ">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="./assets/speakers/sacha.jpg" alt="Sacha">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title mb-1">Sacha Lifszyc</h5>
+                            <div class="badges">
+                                <span class="badge badge-warning">JavaScript</span>
+                                <span class="badge badge-info">React</span>
+                            </div>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="./assets/speakers/freddy.jpeg" alt="Sacha">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title mb-1">Freddy Vega</h5>
+                            <div class="badges">
+                                <span class="badge badge-warning">JavaScript</span>
+                                <span class="badge badge-info">React</span>
+                            </div>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="./assets/speakers/cvander.jpeg" alt="Sacha">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title mb-1">Cristian Vander H</h5>
+                            <div class="badges">
+                                <span class="badge badge-warning">JavaScript</span>
+                                <span class="badge badge-info">React</span>
+                            </div>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="./assets/speakers/leonidas.jpeg" alt="Sacha">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title mb-1">Leonidas Esteban</h5>
+                            <div class="badges">
+                                <span class="badge badge-warning">JavaScript</span>
+                                <span class="badge badge-info">React</span>
+                            </div>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -140,8 +157,74 @@
             </div>
         </div>
     </section>
+
+
     <!-- Speakers -->
-    
+    <section id="place-time">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 px-0">
+                    <img src="./assets/images/honolulu.jpg" alt="Honolulu">
+                </div>
+                <div class="col-12 col-lg-6 p-4">
+                    <h2>Honolulu - Octubre 2025</h2>
+                    <p>
+                        Honolulu o Honolulú es la capital y localidad más grande del 		estado de Hawái, en los Estados Unidos. Honolulu es lamás sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana enla costa sureste dela isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).
+                    </p>
+                    <a class="btn btn-outline-light" target="_blank" href="https://es.wikipedia.org/wiki/Honolulu" >Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- lugar y fecha  -->
+
+
+    <!-- conviertete en orador -->
+    <section id="become-speaker" class="orador my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-uppercase text-center">
+                    <small>Conviertete en un</small>
+                    <h2>Orador</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center mb-3">
+                    anotate como orador para dar una charla <abbr data-toggle="tooltip" title="charlas de 5 minutos">ignite</abbr>. Cuentanos de que quieres hablar!
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-8 offset-md-2">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?" ></textarea>
+                                <small class="form-text text-muted">
+                                    Recuerda agregar un titulo para tu charla
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="button" class="btn btn-platzi btn-block" >Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- conviertete en orador -->
+
+
     <!-- Footer -->
     <footer class="footer" >
         <div class="container">
@@ -170,9 +253,11 @@
             </div>
         </div>
     </footer>
+    <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
 </html> 

@@ -6,8 +6,6 @@
 
 #header{
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .7);
-    position: relative;
-    z-index: 2;
 }
 
 #header img{
@@ -55,8 +53,17 @@
 }
 
 .card img{
-    height: 280px;
+    height: 250px;
     object-fit: cover;
+}
+
+#place-time{
+    background: #343a40;
+    color: white;
+}
+
+#place-time img{
+    max-width: 100%;
 }
 
 .footer{
