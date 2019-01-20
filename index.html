@@ -35,7 +35,7 @@
                         <a class="nav-link" href="#become-speaker">Conviertete en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-platzi" href="#">Compra de tikets</a>
+                        <a data-toggle="modal" data-target="#exampleModal" class="nav-link text-platzi" href="">Compra de tikets</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +82,7 @@
                                 y a los oradores de primer nivel que tenemos para ti. Te esperamos!
                             </p>
                             <a class="btn btn-outline-light" href="#">Quiero ser Orador</a>
-                            <button class="btn btn-platzi" type="button">Comprar Tikets</button>
+                            <button data-toggle="modal" data-target="#exampleModal" class="btn btn-platzi" type="button">Comprar Tikets</button>
                         </div>
                     </div>
                 </div>
@@ -254,6 +254,39 @@
         </div>
     </footer>
     <!-- Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Comprar Tikets</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-platzi">Comprar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
